@@ -1,0 +1,43 @@
+
+Internship Task - 2: Java Weather API Client
+
+Submitted by: Puranjay Saraswat
+Technology Used: Java
+API Used: OpenWeatherMap (https://api.openweathermap.org)
+
+Description:
+This Java program fetches real-time weather data using the OpenWeatherMap API and displays:
+- Temperature (in Celsius)
+- Humidity (in %)
+- Weather description (e.g., scattered clouds, clear sky)
+
+Key Features:
+- Uses HttpURLConnection to make a GET request to the REST API
+- Manually parses JSON data using string operations (no external JARs)
+- Simple and beginner-friendly code with human-style comments
+- Displays full API response for debugging and learning
+
+Input:
+- City name is specified in the code (e.g., "Gwalior")
+- API key is required (a free one from OpenWeatherMap)
+
+Output:
+- Prints the full API response (JSON)
+- Extracted temperature, humidity, and weather description
+
+Sample Output:
+🌐 Full API Response:
+{"coord":{"lon":77.2167,"lat":28.6667},...}
+🌦️ Weather Report for Gwalior:
+Temperature: 31.2°C
+Humidity: 49%
+Description: scattered clouds
+
+Improvements to Try:
+- Take city name as user input using Scanner
+- Add a GUI using Swing
+- Add error handling for invalid city names
+
+Note:
+This version does NOT require any external JAR (like org.json or GSON).
+All logic is based on core Java libraries only.
